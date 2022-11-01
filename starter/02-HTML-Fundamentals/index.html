@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF8" />
+        <link href="style.css" rel="stylesheet" />
         <title>The Basic Language of the web: HTML</title>
     </head>
 
@@ -14,10 +15,11 @@
         <h5>The Basic Language of the web: HTML</h5>
         <h6>The Basic Language of the web: HTML</h6>
         -->
-        <header>
+        <header class="main-header">
             <h1>📘 The Code Magazine</h1>
 
             <nav>
+                <!-- <strong>This is the navigation</strong> -->
                 <a href="blog.html">Blog</a>
                 <a href="#">Challenges</a>
                 <a href="#">Flexbox</a>
@@ -36,7 +38,7 @@
                     height="50"
                 />
 
-                <p>
+                <p id="author">
                     Posted by <strong>Laura Jones</strong> on Monday, June 21st
                     2027
                 </p>
@@ -76,7 +78,7 @@
             <p>In HTML, each element is made up of 3 parts:</p>
 
             <ol>
-                <li>The opening tag</li>
+                <li class="first-li">The opening tag</li>
                 <li>The closing tag</li>
                 <li>The actual element</li>
             </ol>
@@ -98,13 +100,16 @@
             </p>
 
             <ul>
-                <li>To be able to use the fundamental web dev</li>
-                <li>language To hand-craft beautiful websites</li>
-                <li>
-                    instead of relying on tools like Worpress or Wix To build
-                    web
+                <li class="first-li">
+                    To be able to use the fundamental web dev language
                 </li>
-                <li>applications To impress friends To have fun 😃</li>
+                <li>
+                    To hand-craft beautiful websites instead of relying on tools
+                    like Worpress or Wix
+                </li>
+                <li>To build web applications</li>
+                <li>To impress friends</li>
+                <li>To have fun 😃</li>
             </ul>
 
             <p>Hopefully you learned something new here. See you next time!</p>
@@ -112,7 +117,7 @@
 
         <aside>
             <h4>Related posts</h4>
-            <ul>
+            <ul class="related">
                 <li>
                     <img
                         src="img/related-1.jpg"
@@ -121,7 +126,7 @@
                         height="72"
                     />
                     <a href="#">How to learn Web Development</a>
-                    <p>By Jonas Schmedtmann</p>
+                    <p class="related-author">By Jonas Schmedtmann</p>
                 </li>
                 <li>
                     <img
@@ -131,7 +136,7 @@
                         height="72"
                     />
                     <a href="#">The Unknown Powers of CSS</a>
-                    <p>By Jim Dillon</p>
+                    <p class="related-author">By Jim Dillon</p>
                 </li>
                 <li>
                     <img
@@ -141,12 +146,15 @@
                         height="72"
                     />
                     <a href="#">Why JavaScript is Awesome</a>
-                    <p>By Matilda</p>
-                    <p></p>
+                    <p class="related-author">By Matilda</p>
                 </li>
             </ul>
         </aside>
 
-        <footer>Copyright &copy; 2027 by The Code Magazine</footer>
+        <footer>
+            <p id="copyright" class="copyright text">
+                Copyright &copy; 2027 by The Code Magazine
+            </p>
+        </footer>
     </body>
 </html>
