@@ -2,33 +2,33 @@
     /* border-top: 10px solid #1098ad; */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* PAGE SECTIONS */
 body {
     background-color: #eceff4;
     color: #2e3440;
     font-family: sans-serif;
     border-top: 10px solid #1098ad;
+    position: relative;
 }
 
 .container {
-    width: 800px;
+    width: 1200px;
     margin: 0 auto;
 }
 
 .main-header {
     background-color: #e5e9f0;
     border-bottom: 5px solid #4c566a;
-    /* padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px; */
     padding: 20px 40px;
     margin-bottom: 60px;
-    height: 80px;
 }
 
 nav {
     font-size: 18px;
+    text-align: center;
 }
 
 article {
@@ -44,8 +44,9 @@ aside {
     border-top: 5px solid #4c566a;
     border-bottom: 5px solid #4c566a;
     padding: 50px 0;
-    width: 500px;
 }
+
+/* SMALLER ELEMENTS */
 
 h1,
 h2,
@@ -74,6 +75,7 @@ h4 {
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 p {
@@ -107,6 +109,7 @@ li:last-child {
 
 .related {
     list-style: none;
+    margin-left: 0;
 }
 
 ul,
@@ -166,4 +169,111 @@ footer p {
 .post-image {
     width: 100%;
     height: auto;
+}
+
+nav a:link {
+    margin-right: 30px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+nav a:link:last-child {
+    margin-right: 0;
+}
+
+button:hover {
+    background-color: #b48ead;
+    color: #eceff4;
+    font-weight: bold;
+}
+
+button:active {
+    background-color: #b48ead;
+    color: #eceff4;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+button {
+    border-radius: 15px;
+    background-color: #e5e9f0;
+    font-size: 22px;
+    padding: 20px;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+h1::first-letter {
+    font-style: normal;
+    margin-right: 5px;
+}
+
+/* h2::first-letter {
+    font-size: 80px;
+    margin-right: 5px;
+} */
+
+h3 + p::first-line {
+    color: #bf616a;
+}
+
+h2 {
+    position: relative;
+}
+
+h2::after {
+    content: "TOP";
+    color: #2e3440;
+    background-color: #ebcb8b;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top: -15px;
+    right: -25px;
+}
+
+/* FLOATS */
+.author-img {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.author {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+h1 {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+article {
+    width: 825px;
+    float: left;
+}
+
+aside {
+    width: 300px;
+    float: right;
+    padding: 50px 40px;
+}
+
+footer {
+    clear: both;
 }

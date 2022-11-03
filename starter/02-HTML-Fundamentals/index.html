@@ -1,27 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF8" />
+        <meta charset="utf-8" />
         <link href="style.css" rel="stylesheet" />
         <title>The Basic Language of the web: HTML</title>
     </head>
 
     <body>
-        <!--
-        <h1>The Basic Language of the web: HTML</h1>
-        <h2>The Basic Language of the web: HTML</h2>
-        <h3>The Basic Language of the web: HTML</h3>
-        <h4>The Basic Language of the web: HTML</h4>
-        <h5>The Basic Language of the web: HTML</h5>
-        <h6>The Basic Language of the web: HTML</h6>
-        -->
-
         <div class="container">
-            <header class="main-header">
+            <header class="main-header clearfix">
                 <h1>📘 The Code Magazine</h1>
 
                 <nav>
-                    <!-- <strong>This is the navigation</strong> -->
                     <a href="blog.html">Blog</a>
                     <a href="#">Challenges</a>
                     <a href="#">Flexbox</a>
@@ -38,9 +28,10 @@
                         alt="Headshot of Laura Jones"
                         width="50"
                         height="50"
+                        class="author-img"
                     />
 
-                    <p id="author">
+                    <p id="author" class="author">
                         Posted by <strong>Laura Jones</strong> on Monday, June
                         21st 2027
                     </p>
@@ -50,6 +41,7 @@
                         alt="HTML code on a screen"
                         class="post-image"
                     />
+                    <button>❤️Like</button>
                 </header>
                 <p>
                     All modern websites and web applications are built using
