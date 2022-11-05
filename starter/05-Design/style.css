@@ -47,7 +47,7 @@ h2 {
 
 .btn:link,
 .btn:visited {
-    background-color: #394b4b;
+    background-color: #2e3440;
     color: #d8dee9;
     text-decoration: none;
     text-transform: uppercase;
@@ -57,12 +57,11 @@ h2 {
 }
 
 .btn:hover {
-    background-color: #648483;
-    color: #0e1313;
+    background-color: #394b4b;
 }
 
 .btn:active {
-    background-color: #567170;
+    background-color: #485e5e;
 }
 
 .btn--big {
